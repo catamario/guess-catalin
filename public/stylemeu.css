@@ -1,0 +1,27 @@
+.slideshow {
+  overflow: hidden;
+  position: relative; /* Adăugat pentru a controla poziția imaginilor */
+}
+
+.imgslideshow {
+  height: 100%;
+  width: 100%;
+  position: absolute; /* Adăugat pentru a suprapune imaginile */
+  top: 0;
+  left: 0;
+  display: block; /* Ascunde toate imaginile initial */
+  transition: 1000ms opacity ease-in-out; /* Adăugat pentru tranziție lină */
+}
+
+.imgslideshow img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}

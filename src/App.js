@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Acasa from './pages/acasa.js';
+import Politica from './pages/politica.js';
+import Contact from './pages/contact.js';
+import Login from './pages/login.js';
+import Register from './pages/register.js';
+import Account from './pages/account.js';
+import Produs from './pages/produs.js';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function Totalmente()
+{
+return(
+  <BrowserRouter>
+    <Routes>
+      <Route index element = {<Acasa />} />
+      <Route path='/acasa' element = {<Acasa />} />
+      <Route path='/politica' element = {<Politica />} />
+      <Route path='/contact' element = {<Contact />} />
+      <Route path='/login' element = {<Login />} />
+      <Route path='/register' element = {<Register />} />
+      <Route path='/account' element = {<Account />} />
+      <Route path='/produs' element = {<Produs />} />
+    </Routes>
+  </BrowserRouter>
+);
 }
 
-export default App;
+export default Totalmente;
