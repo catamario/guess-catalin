@@ -56,7 +56,7 @@ function Header() {
       <>
       <header className="w-[100vw] h-[130px] fixed flex z-40 bg-white drop-shadow-3xl">
       <div className="logo w-[600px] h-full flex items-center sm:justify-center sm:ml-0 ml-[10px] cursor-default">
-        <h1 className="font-italianno sm:text-[3.5vw] text-[36px]">GUESS Elite</h1>
+        <a href="/acasa"><h1 className="font-italianno sm:text-[3.5vw] text-[36px]">GUESS Elite</h1></a>
       </div>
   
       <div className="bg-white hidden fixed top-[130px] w-full h-[60px] shadow-inner z-30" id="minimenu"></div>
